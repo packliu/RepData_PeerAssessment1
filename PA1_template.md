@@ -27,7 +27,7 @@ Here, the missing value "NA" are skipped (na.rm=TRUE)
 TotStepDay <- aggregate(dat$steps, list(dat$date), FUN=sum, na.rm=TRUE)
 #after grouping, the df TotStepDay has Columns of "Group.1" and "x", so reassign the names
 names(TotStepDay) <- c("date", "steps")
-#plot and save to a PNG file
+
 hist(TotStepDay$steps, breaks=10, col="green")
 ```
 
